@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ post.title }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-header>
+            <img src="{{ post.thumb }}" alt="post thumb" />
+        </ion-card-header>
+        <ion-card-content>
+            <ion-card-title>
+                {{ post.title }}
+            </ion-card-title>
+            <p>{{ post.resume }}</p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

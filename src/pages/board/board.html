@@ -15,7 +15,7 @@
       </ion-thumbnail>
       <h2>{{ post.title }}</h2>
       <p>{{ post.resume }}</p>
-      <button ion-button clear item-right>View</button>
+      <button ion-button clear item-right (click)="show(post)">View</button>
     </ion-item>
   </ion-list>
 </ion-content>

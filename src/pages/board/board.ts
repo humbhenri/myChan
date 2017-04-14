@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { Post } from './post'
+import { PostPage, Post } from '../post/post';
 
 @Component({
   selector: 'board',
@@ -32,6 +32,10 @@ export class BoardPage {
         new Post('assets/img/g.png', 'Third post', 'This is a test'),
       ]
     }
+  }
+
+  show(post: Post) {
+    this.navCtrl.push(PostPage, {post});
   }
 
 }
